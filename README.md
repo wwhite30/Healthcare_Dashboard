@@ -93,7 +93,7 @@ An interactive dashboard connecting directly to the PostgreSQL database via the 
 
 **Design decision:** No-Show Rate is built as a **DAX measure** (`DIVIDE(CALCULATE(COUNTROWS(appointments), appointments\\\[status] = "no-show"), COUNTROWS(appointments), 0)`) rather than a static calculated value. This means it recalculates live based on whatever filters are applied — clicking into a specific department or date range on the dashboard instantly updates the rate.
 
-!\[Dashboard Screenshot](screenshots/dashboard-overview.png)
+!\[Dashboard Screenshot](screenshots\dashboard-overview.png)
 
 ## Getting Started
 
